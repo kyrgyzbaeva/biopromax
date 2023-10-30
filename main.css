@@ -1,0 +1,57 @@
+body{
+    background-image: url(images/me.jpg);
+    background-repeat: no-repeat;
+    background-position-x: right center;
+    background-size: cover;
+    color:white;
+}
+.container{
+    padding: 10px, 100%;
+}
+
+nav{
+    display:flex;
+    justify-content: flex-end;
+    border-bottom: 2px solid red; 
+}
+li{
+    color:aliceblue;
+    margin-right: 5%;
+}
+nav a {
+    color:aliceblue;
+    font-size: 130%;
+}
+nav li a {
+    position: relative;
+    text-decoration: none;
+}
+
+nav li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: width 0.5s;
+    margin-bottom: -5px; 
+}
+nav li a:hover::after {
+    width: 100%;
+}
+.header-text{
+    font-size:40px;
+    margin-top:10%;
+    padding: 10%;
+}
+.header-text h1{
+    font-size:40px;
+    margin-top:3%;
+}
+.header-text span{
+    color:red;
+}
+
+
