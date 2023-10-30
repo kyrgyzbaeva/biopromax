@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <title>Resume</title>
+</head>
+<body>
+    <div class="container1">
+        <nav>
+            <li><a href="index.html">Main</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </nav>
+    </div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                    <p>Hello, I'm Amina! I'm an experienced UX/UI designer with five years of </p>
+                    <p>experience in creating visually appealing and user-friendly web interfaces.</p> 
+                    <p>My love for design and user experience has inspired me to develop innovative
+                    <p>solutions and enhance user interactions with digital products.
+
+                    <p>My experience includes working on various projects, from small startups to 
+                    <p>large corporations. I specialize in designing user interfaces, conducting 
+                    <p>user research, prototyping, and overall design. My goal is to ensure that 
+                    <p>your projects are not only beautiful but also easy to use and effective.
+                    
+                    <p>Outside of work, I'm passionate about basketball, astronomy, and cooking. 
+                    <p>I enjoy listening to a variety of music, and in my free time, I engage in sports.</p>
+                    <nav>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link"onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                    </div>
+                    </nav>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br> Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br> Web App Development</li>
+                            <li><span>App</span><br> Building Android/IOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents " id="experience">
+                        <ul>
+                            <li><span>2019-2022</span><br> UI/UX Design Training at school </li>
+                            <li><span>Current</span><br> Team member at StartApp</li>
+                            <li><span>2023</span><br>Participated in a hackathon. </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents " id="education">
+                        <ul>
+                            <li><span>2010-2017</span><br> Przhevalsk №2 Karakol</li>
+                            <li><span>2017-2022</span><br> Girls high school "Z.Bektenov"</li>
+                            <li><span>2022</span><br> AIU</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+</body>
+</html>
